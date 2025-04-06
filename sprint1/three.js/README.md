@@ -98,7 +98,7 @@ cube.rotation.x += 0.01;
 cube.rotation.y += 0.01;
 ```
 
-O código final no arquivo `main.js` devera ser organizado assim:
+O código final no arquivo `main.js` deverá ser organizado assim:
 
 ```JavaScript
 import * as THREE from 'three';
