@@ -22,16 +22,12 @@ renderer.setClearColor(0x000000, 0);
 document.body.appendChild(renderer.domElement);
 
 // Adiciona luzes à cena
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Luz ambiente para iluminação geral
+const ambientLight = new THREE.AmbientLight(0xffffff, 2); // Luz ambiente para iluminação geral
 scene.add(ambientLight);
 
-const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8); // Luz direcional simulando luz do sol
-directionalLight.position.set(5, 5, 5);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1); // Luz direcional simulando luz do sol
+directionalLight.position.set(1, 1, 1);
 scene.add(directionalLight);
-
-const pointLight = new THREE.PointLight(0xffffff, 1.0); // Luz pontual para iluminação focalizada
-pointLight.position.set(-5, -5, -5);
-scene.add(pointLight);
 
 // Configura o OrbitControls para permitir interação (rotação, zoom) do usuário
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -59,9 +55,9 @@ mtlLoader.load(
             
             if (material.name === 'Material') {
                 // Para "Material": aparência de metal polido
-                material.roughness = 1.0;
+                material.roughness = 0;
                 material.metalness = 1.0;
-                material.shininess = 100;
+                material.shininess = 500;
                 material.opacity = 1.0;
             } else if (material.name === 'texture_bake') {
                 // Para "texture_bake": aparência natural e opaca (como uma maçã)
@@ -71,8 +67,8 @@ mtlLoader.load(
                 material.opacity = 1.0;
             } else {
                 // Configurações padrão para outros materiais
-                material.roughness = 0.5;
-                material.metalness = 0.0;
+                material.roughness = 0;
+                material.metalness = 1;
                 material.shininess = 100;
                 material.opacity = 1.0;
             }

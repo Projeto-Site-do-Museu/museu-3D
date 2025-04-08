@@ -136,6 +136,69 @@ npx vite
 
 Aparecerá uma URL como `http://localhost:5173`, clique nela para observar o cubo em ação.
 
+### Modificações no código main.js
+
+O código original do `main.js` foi substituído pelo seguinte código, que carrega um modelo 3D externo (arquivos .obj e .mtl) em vez de criar um cubo primitivo. Isso permite exibir a maçã fotogrametrada com mais detalhes e realismo. As bibliotecas `OBJLoader` e `MTLLoader` foram adicionadas para permitir o carregamento dos arquivos.
+
+Para entender melhor as modificações, observe os seguintes trechos do código:
+
+**1. Importação das bibliotecas:**
+```javascript
+import * as THREE from 'three';
+
+import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
+```
+Aqui, importamos as bibliotecas `MTLLoader` e `OBJLoader` para carregar os arquivos .mtl (material) e .obj (geometria do modelo).
+
+**2. Carregamento do modelo:**
+```javascript
+const mtlLoader = new MTLLoader();
+mtlLoader.load('apple.mtl', (materials) => {
+    materials.preload();
+    const objLoader = new OBJLoader();
+    objLoader.setMaterials(materials);
+    objLoader.load('apple.obj', (object) => {
+        scene.add(object);
+    });
+});
+```
+Este trecho mostra como os arquivos .mtl e .obj são carregados. Primeiro, o `MTLLoader` carrega o arquivo .mtl, que contém as informações de material do modelo. Em seguida, o `OBJLoader` carrega o arquivo .obj, que contém a geometria do modelo. O material carregado é aplicado ao objeto antes de adicioná-lo à cena.
+
+**3. Ajustes na animação (se necessário):**
+Caso o modelo precise de ajustes na animação, essa parte do código seria modificada para adequar a animação ao novo modelo. Por exemplo, se o modelo não precisar de rotação, a função `animate` pode ser ajustada para:
+```javascript
+function animate() {
+    // Remova ou ajuste as linhas de rotação, se necessário
+    // cube.rotation.x += 0.01;
+    // cube.rotation.y += 0.01;
+
+    renderer.render( scene, camera );
+}
+```
+
+Com essas modificações, o código agora carrega um modelo 3D externo, permitindo uma representação mais detalhada e realista na cena.
+
+**4. Configuração da Iluminação:**
+```javascript
+const ambientLight = new THREE.AmbientLight(0x404040); // soft white light
+scene.add(ambientLight);
+
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+directionalLight.position.set(5, 5, 5);
+scene.add(directionalLight);
+```
+Aqui, adicionamos dois tipos de luz: `AmbientLight` e `DirectionalLight`. A `AmbientLight` ilumina todos os objetos na cena igualmente, enquanto a `DirectionalLight` emite luz em uma direção específica. A posição e a intensidade da `DirectionalLight` são ajustadas para criar um efeito de iluminação mais interessante.
+
+**5. Configuração da Câmera:**
+```javascript
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+camera.position.z = 5;
+camera.position.y = 2;
+camera.lookAt(0,0,0);
+```
+A câmera é configurada com um ângulo de visão de 75 graus, uma proporção de tela que corresponde à janela do navegador e distâncias de renderização mínima e máxima de 0.1 e 1000, respectivamente. A posição da câmera é definida para `z = 5` e `y = 2`, e a câmera é apontada para a origem da cena (0,0,0) usando `lookAt`.
+
 ### Conclusão
 
 Apesar das dificuldades relacionadas à falta de conhecimento em JavaScript da equipe, a ferramenta se mostrou relativamente intuitiva para uso, mesmo se tratando de pessoas com pouca experiência em Desenvolvimento Web. Os próximos desafios serão integrar o código feito pelo Three.js com as ferramentas Blender e Meshroom.
