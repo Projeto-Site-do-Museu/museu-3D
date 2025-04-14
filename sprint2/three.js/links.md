@@ -1,6 +1,6 @@
 # Objetos online
 
-### Dunot 3D
+### Donut 3D
 
 >[Repositório](https://github.com/00Thiago/Imagem3Donline) (com arquivo .glb) e [Site](https://00thiago.github.io/Imagem3Donline/) (para visualização online)
 
