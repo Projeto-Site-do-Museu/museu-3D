@@ -199,9 +199,9 @@ camera.lookAt(0,0,0);
 ```
 A câmera é configurada com um ângulo de visão de 75 graus, uma proporção de tela que corresponde à janela do navegador e distâncias de renderização mínima e máxima de 0.1 e 1000, respectivamente. A posição da câmera é definida para `z = 5` e `y = 2`, e a câmera é apontada para a origem da cena (0,0,0) usando `lookAt`.
 
-### Conclusão
+A câmera é configurada com um ângulo de visão de 75 graus, uma proporção de tela que corresponde à janela do navegador e distâncias de renderização mínima e máxima de 0.1 e 1000, respectivamente. A posição da câmera é definida para `z = 5` e `y = 2`, e a câmera é apontada para a origem da cena (0,0,0) usando `lookAt`.
 
-Apesar das dificuldades relacionadas à falta de conhecimento em JavaScript da equipe, a ferramenta se mostrou relativamente intuitiva para uso, mesmo se tratando de pessoas com pouca experiência em Desenvolvimento Web. Os próximos desafios serão integrar o código feito pelo Three.js com as ferramentas Blender e Meshroom.
+### Conclusão
 
 ### Fontes e Referências
 

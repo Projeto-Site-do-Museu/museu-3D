@@ -1,0 +1,40 @@
+- foram feitas duas tentativas de fotogrametria
+- em ambas as fotos foram feitas durante a tarde, com iluminação natural não direta
+- na tentativa 1 foi adicionado apenas iluminação artificial de lâmpadas no teto
+- na tentativa 2 foi adicionado a iluminação artificial do teto mais a iluminação artificial de uma caixa godox acoplada à câmera
+- em ambas as tentativas foram feitas fotografias mais próximas à maçã
+- em ambas não foi utilizado tripé como nas fotogrametria da sprint 1
+- abaixo estão as configurações da câmera em ambas as tentativas:
+
+tentativa 1:
+44 fotos
+modo manual
+28mm
+iso 1000
+f8
+1/60s
+arquivo raw (ARW)
+resultaram em:
+estrutura = 43 câmeras / 19273 pontos
+textura = 1099085 faces / 2 mapas de textura
+
+
+tentativa 2:
+42 fotos
+modo manual
+28mm
+iso 400 - 2000
+f8
+1/60s
+arquivo raw (ARW)
+resultaram em:
+estrutura = 41 cameras / 24277 pontos
+textura = 1267631 faces / 2 mapas de textura
+
+- os resultados da tentativa 1 foram considerados superiores à tentativa 2
+- isso provavelmente se deve à falta de unidade no iso da tentativa 2, pois os problemas ficaram mais na textura
+- mas não foram apenas na textura, pois na tentativa 1 o talo da maçã ficou evidente e completo, enquanto na tentatvia 2 ele ficou com um pedaço faltando, como no ocorrido da sprint 1
+- outro problema idenficado foi o não uso do tripé, que apesar de agilizar o processo, torna ele menos confortável e dificulta seguir um rigor para cobrir de fotos toda a maçã
+- um resultado que foi melhor foi que não houve tantas sobras de digitalização quanto na tentativa da sprint 1, o que se acha que se deve ao fato de que as fotos foram tiradas mais próximas ao objeto
+
+

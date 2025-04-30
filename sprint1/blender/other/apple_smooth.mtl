@@ -1,0 +1,32 @@
+# Blender 4.4.0 MTL File: 'apple.blend'
+# www.blender.org
+
+newmtl material_1001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd C:/Users/gm_bi/Documents/GitHub/ifsc/2025.1/aei/mesh/apple/MeshroomCache/Texturing/1a80bbbe47b37d003014d13e55dbb90869694639/texture_1001.exr
+
+newmtl material_1002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd C:/Users/gm_bi/Documents/GitHub/ifsc/2025.1/aei/mesh/apple/MeshroomCache/Texturing/1a80bbbe47b37d003014d13e55dbb90869694639/texture_1002.exr
+
+newmtl material_1003
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd C:/Users/gm_bi/Documents/GitHub/ifsc/2025.1/aei/mesh/apple/MeshroomCache/Texturing/1a80bbbe47b37d003014d13e55dbb90869694639/texture_1003.exr
