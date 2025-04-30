@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>README.md</title>
+    <title>metodologia-objetos-complexos.md</title>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     
 <style>
@@ -366,63 +366,133 @@ code {
 </head>
 
 <body>
-    <h1 id="relat%C3%B3rio-t%C3%A9cnico---refinamento-do-processo-fotogr%C3%A1fico">Relatório Técnico - Refinamento do Processo Fotográfico</h1>
-<p>Este relatório detalha o procedimento e os resultados obtidos em duas tentativas para refinar o processo fotográfico aplicado na fotogrametria da maçã. O objetivo foi melhorar a qualidade da estrutura e das texturas em comparação com os resultados obtidos na sprint anterior.</p>
-<h2 id="condi%C3%A7%C3%B5es-e-configura%C3%A7%C3%B5es-comuns">Condições e Configurações Comuns</h2>
+    <h1 id="metodologia-para-digitaliza%C3%A7%C3%A3o-de-objetos-complexos">Metodologia para Digitalização de Objetos Complexos</h1>
+<h2 id="introdu%C3%A7%C3%A3o">Introdução</h2>
+<p>Este documento estabelece uma metodologia sistemática para a digitalização de objetos complexos, baseada nas experiências obtidas com a digitalização da maçã e nas lições aprendidas durante o processo.</p>
+<h2 id="defini%C3%A7%C3%A3o-de-objeto-complexo">Definição de Objeto Complexo</h2>
+<p>Consideramos objetos complexos aqueles que apresentam uma ou mais das seguintes características:</p>
 <ul>
-<li>Ambas as tentativas foram realizadas durante o período da tarde com iluminação natural indireta.</li>
-<li>As fotos foram capturadas próximas ao objeto, sem o uso de tripé.</li>
-<li>Configurações gerais da câmera:
+<li>Superfícies não uniformes ou com detalhes intrincados</li>
+<li>Múltiplas cavidades ou saliências</li>
+<li>Partes finas ou delicadas (como caules, hastes)</li>
+<li>Texturas variadas em diferentes regiões</li>
+<li>Áreas reflexivas ou transparentes</li>
+</ul>
+<h2 id="metodologia-proposta">Metodologia Proposta</h2>
+<h3 id="1-prepara%C3%A7%C3%A3o">1. Preparação</h3>
+<h4 id="11-an%C3%A1lise-do-objeto">1.1 Análise do Objeto</h4>
+<ul>
+<li>Identificar áreas críticas que necessitam atenção especial</li>
+<li>Mapear regiões com diferentes texturas</li>
+<li>Documentar partes delicadas ou problemáticas</li>
+</ul>
+<h4 id="12-setup-do-ambiente">1.2 Setup do Ambiente</h4>
+<ul>
+<li>Iluminação:
+<ul>
+<li>Natural indireta (período da tarde)</li>
+<li>Evitar luzes direcionais fortes</li>
+<li>Usar difusores quando necessário</li>
+<li>Manter ISO baixo (400-800)</li>
+</ul>
+</li>
+</ul>
+<h4 id="13-configura%C3%A7%C3%B5es-da-c%C3%A2mera">1.3 Configurações da Câmera</h4>
 <ul>
 <li>Modo: Manual</li>
-<li>Distância focal: 28mm</li>
-<li>Abertura: f/8</li>
-<li>Tempo de exposição: 1/60s</li>
-<li>Formato: RAW (ARW)</li>
+<li>Formato: RAW</li>
+<li>Abertura: f/8 (priorizar profundidade de campo)</li>
+<li>Velocidade: 1/60s ou mais rápido</li>
+<li>ISO: Fixo, preferencialmente baixo</li>
+<li>Distância focal: 28mm ou similar</li>
+</ul>
+<h3 id="2-processo-de-captura">2. Processo de Captura</h3>
+<h4 id="21-estrat%C3%A9gia-multi-camadas">2.1 Estratégia Multi-camadas</h4>
+<ol>
+<li>
+<p><strong>Camada Base</strong> (objeto completo):</p>
+<ul>
+<li>40-50 fotos do objeto inteiro</li>
+<li>Distância consistente</li>
+<li>Ângulos variados (360° horizontal + 180° vertical)</li>
 </ul>
 </li>
-</ul>
-<h2 id="detalhamento-das-tentativas">Detalhamento das Tentativas</h2>
-<h3 id="tentativa-1">Tentativa 1</h3>
+<li>
+<p><strong>Camada de Detalhes</strong>:</p>
 <ul>
-<li>Número de fotos: 44</li>
-<li>ISO: 1000 (fixo)</li>
-<li>Iluminação: Natural indireta e artificial de lâmpadas no teto</li>
-<li>Resultados obtidos:
-<ul>
-<li>Estrutura: 43 câmeras, 19.273 pontos</li>
-<li>Textura: 1.099.085 faces, 2 mapas de textura</li>
+<li>15-20 fotos adicionais para cada área complexa</li>
+<li>Maior aproximação</li>
+<li>Múltiplos ângulos por detalhe</li>
 </ul>
 </li>
-</ul>
-<p><img src="file:///c:/Users/gm_bi/Documents/GitHub/ifsc/2025.1/aei/museu-3D/sprint2/mesh/imgs/resultadoTentativa1.png" alt="Resultado Tentativa 1"></p>
-<h3 id="tentativa-2">Tentativa 2</h3>
+<li>
+<p><strong>Camada de Elementos Críticos</strong>:</p>
 <ul>
-<li>Número de fotos: 42</li>
-<li>ISO: Variável (400 - 2000)</li>
-<li>Iluminação: Natural indireta, lâmpadas no teto e iluminação adicional com caixa Godox acoplada à câmera</li>
-<li>Resultados obtidos:
-<ul>
-<li>Estrutura: 41 câmeras, 24.277 pontos</li>
-<li>Textura: 1.267.631 faces, 2 mapas de textura</li>
+<li>10-15 fotos específicas para elementos delicados</li>
+<li>Uso de tripé</li>
+<li>Foco em estabilidade</li>
 </ul>
 </li>
-</ul>
-<p><img src="file:///c:/Users/gm_bi/Documents/GitHub/ifsc/2025.1/aei/museu-3D/sprint2/mesh/imgs/resultadoTentativa2.png" alt="Resultado Tentativa 2"></p>
-<h2 id="an%C3%A1lise-comparativa-dos-resultados">Análise Comparativa dos Resultados</h2>
+</ol>
+<h3 id="3-processamento-no-meshroom">3. Processamento no Meshroom</h3>
+<h4 id="31-processamento-inicial">3.1 Processamento Inicial</h4>
+<ol>
+<li>Executar StructureFromMotion com todas as fotos</li>
+<li>Avaliar quais câmeras foram alinhadas</li>
+<li>Identificar áreas problemáticas</li>
+</ol>
+<h4 id="32-refinamento">3.2 Refinamento</h4>
+<ol>
+<li>Criar múltiplos projetos se necessário:
 <ul>
-<li>A tentativa 1 apresentou resultados superiores, especialmente na qualidade da textura e na completude do caule da maçã.</li>
-<li>A variabilidade do ISO na tentativa 2 provavelmente causou inconsistências visuais e resultou em problemas mais evidentes na textura.</li>
-<li>Além da textura, observou-se que na tentativa 1 o caule da maçã ficou completo e bem definido, ao contrário da tentativa 2 que apresentou um caule incompleto, semelhante à falha da sprint anterior.</li>
+<li>Um para objeto completo</li>
+<li>Outros para detalhes específicos</li>
 </ul>
-<p><img src="file:///c:/Users/gm_bi/Documents/GitHub/ifsc/2025.1/aei/museu-3D/sprint2/mesh/imgs/comparacaoResultado.png" alt="Comparação entre Resultados"></p>
-<h2 id="considera%C3%A7%C3%B5es-sobre-o-processo">Considerações sobre o Processo</h2>
+</li>
+<li>Ajustar parâmetros do DepthMap para áreas complexas:
 <ul>
-<li>O não uso do tripé, embora tenha agilizado o processo de captura, dificultou o conforto do operador e prejudicou a consistência do registro fotográfico.</li>
-<li>Um aspecto positivo foi a redução considerável das sobras de digitalização em comparação com a sprint anterior, atribuída principalmente à maior proximidade das fotos ao objeto.</li>
+<li>Aumentar número de vizinhos</li>
+<li>Reduzir threshold de consistência</li>
 </ul>
-<h2 id="conclus%C3%A3o">Conclusão</h2>
-<p>Para futuras tentativas, recomenda-se o uso fixo do ISO, preferencialmente baixo, e o uso de tripé para garantir maior rigor e consistência nas fotografias, mantendo-se a proximidade já estabelecida para otimizar a qualidade da digitalização.</p>
+</li>
+</ol>
+<h3 id="4-p%C3%B3s-processamento-no-blender">4. Pós-processamento no Blender</h3>
+<h4 id="41-prepara%C3%A7%C3%A3o-da-malha">4.1 Preparação da Malha</h4>
+<ol>
+<li>Aplicar smoothing seletivo por área</li>
+<li>Usar Instant Meshes para retopologia</li>
+<li>Manter densidade de malha variável:
+<ul>
+<li>Maior em áreas detalhadas</li>
+<li>Menor em superfícies simples</li>
+</ul>
+</li>
+</ol>
+<h4 id="42-integra%C3%A7%C3%A3o-de-modelos">4.2 Integração de Modelos</h4>
+<ol>
+<li>Alinhar modelos detalhados com o modelo base</li>
+<li>Usar modificador Boolean para união de malhas</li>
+<li>Retopologia final para uniformização</li>
+</ol>
+<h3 id="5-controle-de-qualidade">5. Controle de Qualidade</h3>
+<h4 id="51-checklist-de-verifica%C3%A7%C3%A3o">5.1 Checklist de Verificação</h4>
+<ul>
+<li><input type="checkbox" id="checkbox0"><label for="checkbox0">Completude da geometria</label></li>
+<li><input type="checkbox" id="checkbox1"><label for="checkbox1">Qualidade da textura</label></li>
+<li><input type="checkbox" id="checkbox2"><label for="checkbox2">Fidelidade dos detalhes</label></li>
+<li><input type="checkbox" id="checkbox3"><label for="checkbox3">Integridade das áreas críticas</label></li>
+<li><input type="checkbox" id="checkbox4"><label for="checkbox4">Otimização da malha</label></li>
+</ul>
+<h4 id="52-documenta%C3%A7%C3%A3o">5.2 Documentação</h4>
+<ul>
+<li>Registrar parâmetros utilizados</li>
+<li>Documentar áreas problemáticas</li>
+<li>Arquivar configurações bem-sucedidas</li>
+</ul>
+<h2 id="considera%C3%A7%C3%B5es-finais">Considerações Finais</h2>
+<p>Esta metodologia deve ser tratada como um documento vivo, sendo atualizada com base em novas experiências e aprendizados. Recomenda-se sua revisão e ajuste após cada novo objeto complexo digitalizado.</p>
+<h2 id="ap%C3%AAndice-exemplo-de-aplica%C3%A7%C3%A3o">Apêndice: Exemplo de Aplicação</h2>
+<p>Para validar esta metodologia, recomenda-se aplicá-la inicialmente em um objeto que combine diferentes desafios, como uma estatueta com detalhes finos e texturas variadas.</p>
 
 </body>
 
