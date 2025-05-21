@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Visualizador 3D</title>
+    <style>
+      body { margin: 0; overflow: hidden; }
+      canvas { display: block; }
+    </style>
+
+    <!-- 1º carrega loader.js, que traz as libs + main.js -->
+    <script src="loader.js"></script>
+
+    <!-- 2º aguarda tudo e inicializa -->
+    <script>
+      // esse código só roda depois que loader.js carregou o main.js
+      document.addEventListener('DOMContentLoaded', () => {
+        // init sem containerId usa document.body
+        Viewer3D.init();    
+        Viewer3D.animate();
+      });
+    </script>
+  </head>
+  <body>
+    <!-- nada aqui -->
+  </body>
+</html>
